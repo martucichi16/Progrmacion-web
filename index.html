@@ -6,65 +6,71 @@
         <title>iCook - Tus Recetas Online</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
         <header>
-            <img src="./img/logo.png" alt="Logo Web" width="50px">
 
             <nav> <!-- Cada opcion tendria un enlace a las respectivas paginas -->
-                <ul>
-                    <li><a href="index.html" target="_self">Inicio</a></li>
-                    <li>Conocenos</li>
-                    <li>
-                        <details>
-                            <summary>Recetas saladas</summary>
-                            <summary>Entradas</summary>
-                            <summary>Pastas</summary>
-                            <summary>Carnes</summary>
-                            <summary>Ensaladas</summary>
-                            <summary>Sopas</summary>
-                            <summary>Otros</summary>
-                        </details>
-                    </li>
-                    <li>
-                        <details>
-                            <summary>Recetas dulces</summary>
-                            <summary>Tortas y Budines</summary>
-                            <summary>Galletitas</summary>
-                            <summary>Tartas dulces</summary>
-                            <summary>Postres</summary>
-                            <summary>Helados</summary>
-                            <summary>Otros</summary>
-                        </details>
-                    </li>
-                    <li>Tienda</li>
-                </ul>
+                <img src="./assets/img/logo.png" alt="Logo Web" width="50px">
+                <div class="menuButton">
+                    <ul>
+                        <li><a href="index.html" target="_self">Inicio</a></li>
+                        <li>Conocenos</li>
+                        <li>
+                            <details>
+                                <summary>Recetas saladas</summary>
+                                <summary>Entradas</summary>
+                                <summary>Pastas</summary>
+                                <summary>Carnes</summary>
+                                <summary>Ensaladas</summary>
+                                <summary>Sopas</summary>
+                                <summary>Otros</summary>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Recetas dulces</summary>
+                                <summary>Tortas y Budines</summary>
+                                <summary>Galletitas</summary>
+                                <summary>Tartas dulces</summary>
+                                <summary>Postres</summary>
+                                <summary>Helados</summary>
+                                <summary>Otros</summary>
+                            </details>
+                        </li>
+                        <li>Tienda</li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
-        <section> <!-- Bienvenida -->
+        <section id="bienvenida"> <!-- Bienvenida -->
             <h1>Todos pueden cocinar</h1>
+            <br>
+            <div>
+                <img src="./assets/img/cocinando.jpg!d" alt="Foto cocinando" width="400px">
 
-            <img src="./img/cocinando.jpg!d" alt="Foto cocinando" width="400px">
-
-            <p>
-                En iCook buscamos facilitar la cocina a todos aquellos interesados, sin importar
-                la edad, experiencia cocinando, faciliad para cocinar, creatividad, dietas, 
-                restricciones y demás diferencias. <br>
-                Aqui encontrarás recetas clasificadas según nacionalidad, según dificultad y
-                según categoria de plato (dulce o salado). Te invitamos a explorar nuestro sitio web.
-                <br>
-                Si estas buscando un lugar donde aprender y comer rico, llegaste al lugar indicado 
-                ¡Bienvenido!
-            </p>
+                <p>
+                    En iCook buscamos facilitar la cocina a todos aquellos interesados, sin importar
+                    la edad, experiencia cocinando, faciliad para cocinar, creatividad, dietas, 
+                    restricciones y demás diferencias. <br>
+                    Aqui encontrarás recetas clasificadas según nacionalidad, según dificultad y
+                    según categoria de plato (dulce o salado). Te invitamos a explorar nuestro sitio web.
+                    <br>
+                    Si estas buscando un lugar donde aprender y comer rico, llegaste al lugar indicado
+                    <br> 
+                    <b>¡Bienvenido!</b>
+                </p>
+            </div>
         </section>
 
-        <section> <!-- Principiantes -->
+        <section id="principiantes"> <!-- Principiantes -->
             <h1 id="princ">Recetas para Principiantes</h1>
-
-            <div>
-                <img src="./img/fideos_con_crema.jpg" alt="Fideos con Crema" width="200px">
+            <br>
+            
+            <div class="recipe">
+                <img src="./assets/img/fideos_con_crema.jpg" alt="Fideos con Crema" width="200px" height="135px">
                 <h3>Fideos con Crema</h3>
                 <p>
                     Un plato básico de pastas que encanta por su sencillez de sabores. Asi como
@@ -74,19 +80,19 @@
                 <button>Ir a Receta</button>
             </div>
 
-            <div>
-                <img src="./img/asado_horno.jpg" alt="Asado al horno" width="200px">
+            <div class="recipe">
+                <img src="./assets/img/asado_horno.jpg" alt="Asado al horno" width="200px" height="135px">
                 <h3>Asado al horno</h3>
                 <p>
-                    Un clásico de la abuela: carne, verduritas y salasa de tomate. ¿Qué puede 
+                    Un clásico de la abuela: carne, verduritas y salsa de tomate. ¿Qué puede 
                     salir mal? Fácil de cocinar y perfecto para aparentar ser un experto.
                 </p>
 
                 <button>Ir a Receta</button>
             </div>
 
-            <div>
-                <img src="./img/salteado.jpg" alt="Salteado de verduras" width="200px">
+            <div class="recipe">
+                <img src="./assets/img/salteado.jpg" alt="Salteado de verduras" width="200px" height="135px">
                 <h3>Salteado de verduras</h3>
                 <p>
                     Una opción saludable y rápida. Después de peparar esta receta te aseguro que será
@@ -96,8 +102,9 @@
                 <button>Ir a Receta</button>
             </div>
 
-            <div>
-                <img src="./img/milanesa_ensalada.jpg" alt="Milanesa con ensalada" width="200px">
+            <div class="recipe">
+                <img src="./assets/img/milanesa_ensalada.jpg" alt="Milanesa con ensalada" width="200px" 
+                height="135px">
                 <h3>Milanesas con ensalada</h3>
                 <p>
                     La receta que todos necesitamos saber para satisfacer ese antojo recurrente. 
@@ -110,45 +117,45 @@
 
         </section>
 
-        <section> <!-- Nacionalidad-->
+        <section id="nations"> <!-- Nacionalidad-->
             <h1 id="countries">Recetas según Nacionalidad</h1>
 
             <div>
-                <img src="./img/flags/argentina.webp" alt="Bandera de Argentina" width="40px">
+                <img src="./assets/img/flags/argentina.webp" alt="Bandera de Argentina" width="40px">
                 <p>Comida argentina</p>
 
-                <img src="./img/flags/EEUU.webp" alt="Bandera de EEUU" width="40px">
+                <img src="./assets/img/flags/EEUU.webp" alt="Bandera de EEUU" width="40px">
                 <p>Comida americana</p>
 
-                <img src="./img/flags/mexico.webp" alt="Bandera de México" width="40px">
+                <img src="./assets/img/flags/mexico.webp" alt="Bandera de México" width="40px">
                 <p>Comida mexicana</p>
             </div>
 
             <div>
-                <img src="./img/flags/francia.png" alt="Bandera de Francia" width="40px">
+                <img src="./assets/img/flags/francia.png" alt="Bandera de Francia" width="40px">
                 <p>Comida francesa</p>
 
-                <img src="./img/flags/italia.png" alt="Bandera de Italia" width="40px">
+                <img src="./assets/img/flags/italia.png" alt="Bandera de Italia" width="40px">
                 <p>Comida italiana</p>
 
-                <img src="./img/flags/inglaterra.jpg" alt="Bandera de Inglaterra" width="40px">
+                <img src="./assets/img/flags/inglaterra.jpg" alt="Bandera de Inglaterra" width="40px">
                 <p>Comida inglesa</p>
             </div>
 
             <div>
-                <img src="./img/flags/grecia.jpg" alt="Bandera de Grecia" width="40px">
+                <img src="./assets/img/flags/grecia.jpg" alt="Bandera de Grecia" width="40px">
                 <p>Comida griega</p>
 
-                <img src="./img/flags/china.jfif" alt="Bandera de China" width="40px">
+                <img src="./assets/img/flags/china.jfif" alt="Bandera de China" width="40px">
                 <p>Comida china</p>
 
-                <img src="./img/flags/otros.png" alt="Simbolo mundo" width="40px">
+                <img src="./assets/img/flags/otros.png" alt="Simbolo mundo" width="40px">
                 <p>Otros</p>
             </div>
         </section>
 
-        <section> <!-- Restricciones -->
-            <h1 id="diets">Recetas para Todos</h1>
+        <section id="diets"> <!-- Restricciones -->
+            <h1 id="diet">Recetas para Todos</h1>
 
             <p>La comida no es la excepción a la inclusión. Cada vez es más la gente con dietas 
                 que "prohiben" el consumo de cierto alimento, ya sea por salud, gustos o ideales. 
@@ -177,17 +184,17 @@
                 <h3>Redes y Contacto</h3>
 
                 <a href="https://www.instagram.com/" target="_blank">
-                    <img src="./img/ig_logo.png" alt="Logo Ig" width="40px">
+                    <img src="./assets/img/ig_logo.png" alt="Logo Ig" width="40px">
                 </a>
                 <p>@iCook_ig</p>
 
                 <a href="https://twitter.com/?lang=es" target="_blank">
-                    <img src="./img/twitter_logo.png" alt="Logo Twitter" width="40px">
+                    <img src="./assets/img/twitter_logo.png" alt="Logo Twitter" width="40px">
                 </a>
                 <p>@iCook_tw</p>
 
                 <a>
-                    <img src="./img/mail_logo.jpg" alt="Mail" width="40px">
+                    <img src="./assets/img/mail_logo.jpg" alt="Mail" width="40px">
                 </a>
                 <p>icookrecipes@gmail.com</p>
             </div>
@@ -198,7 +205,7 @@
                 <ul>
                     <li><a href="#princ">Princpiantes</a></li>
                     <li><a href="#countries">Nacionalidades</a></li>
-                    <li><a href="#diets">Restricciones</a></li>
+                    <li><a href="#diet">Restricciones</a></li>
                 </ul>
             </div>
 

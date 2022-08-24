@@ -1,0 +1,130 @@
+body{
+    margin: 20px
+}
+
+#main{
+    background-color: rgb(255, 235, 204);
+    padding: 20px;
+    margin: 20px
+}
+
+nav{
+    background-color: rgb(213, 236, 214);
+    display: flex;
+    flex-direction: row;
+    height:110px;
+    padding: 10px
+}
+
+nav ul{
+    display: flex
+}
+
+/* Le sacamos el • a los items del nav*/
+nav li{
+    margin-left: 20px;
+    list-style: none
+}
+
+/* Le sacamos el subrayado a los enlaces del nav*/
+nav a{
+    text-decoration: none;
+    color:rgb(38, 145, 65);
+} 
+
+nav a:hover{
+    color: rgba(9, 204, 51, 0.849)
+}
+
+/* Hay que agregarle el display:flex porque esta dentro del nav, que tiene display:flex*/
+nav img{
+    display:flex;
+    width: auto; /* para que tome el tamaño de la pantalla y lo ajuste al ancho de la misma */
+    max-height: 80px
+}
+
+.menuButton{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#bienvenida{
+    background-color: blanchedalmond;
+    margin:30px;
+    padding:20px;
+}
+
+#bienvenida h1{
+    display: flex;
+    justify-content: center;
+}
+
+#bienvenida div{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+#bienvenida p{
+    width: 300px;
+}
+
+#bienvenida p b{
+    color:rgb(38, 145, 65);
+}
+
+#principiantes {
+    background-color: rgb(254, 255, 205);
+    display:flex;
+    margin:30px;
+    padding:20px;
+    justify-content: space-evenly;
+}
+
+#principiantes p{
+    width: 200px;
+    height: 125px;
+}
+
+.recipe {
+    border: 1px solid grey;
+    padding:5px;
+}
+
+#nations {
+    background-color:rgb(255, 235, 204);
+    display:flex;
+    margin:30px;
+    padding:20px;
+    justify-content: space-evenly;
+}
+
+#diets {
+    background-color:rgb(254, 255, 205);
+    margin:30px;
+    padding:20px;
+}
+
+#diets form{
+    align-content: center;
+}
+
+footer {
+    background-color:rgb(255, 235, 204);
+    display:flex;
+    justify-content: space-evenly;
+}
+
+footer li{
+    list-style: none
+}
+
+footer a{
+    text-decoration: none;
+    color: black
+}
+
+footer a:hover{
+    color: rgba(9, 204, 51, 0.521)
+}

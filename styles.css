@@ -29,11 +29,11 @@ nav li{
 /* Le sacamos el subrayado a los enlaces del nav*/
 nav a{
     text-decoration: none;
-    color:rgb(38, 145, 65);
+    color:white;
 } 
 
 nav a:hover{
-    color: rgba(9, 204, 51, 0.849)
+    color: white
 }
 
 /* Hay que agregarle el display:flex porque esta dentro del nav, que tiene display:flex*/
@@ -68,6 +68,7 @@ nav img{
 
 #bienvenida p{
     width: 300px;
+    text-align: justify;
 }
 
 #bienvenida p b{
@@ -82,9 +83,19 @@ nav img{
     justify-content: space-evenly;
 }
 
+#principiantes h1{
+    text-align: center;
+}
+
+#principiantes h5{
+    height: 50px;
+}
+
 #principiantes p{
     width: 200px;
-    height: 125px;
+    height: 150px;
+    text-align: justify;
+    padding-right: 15px
 }
 
 .recipe {
@@ -111,13 +122,17 @@ nav img{
 }
 
 footer {
-    background-color:rgb(255, 235, 204);
+    background-color:rgb(213, 236, 214);
     display:flex;
     justify-content: space-evenly;
+    padding: 15px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: grey
 }
 
 footer li{
-    list-style: none
+    list-style: square
 }
 
 footer a{
@@ -127,4 +142,12 @@ footer a{
 
 footer a:hover{
     color: rgba(9, 204, 51, 0.521)
+}
+
+footer div{
+    margin: 10px
+}
+
+#social div {
+    display: flex;
 }

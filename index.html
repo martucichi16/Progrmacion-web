@@ -7,6 +7,17 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+        crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+        crossorigin="anonymous"></script>
+
+        <!-- Uso el kit de iconos de Font Awesome -->
+        <script src="https://kit.fontawesome.com/c61fa05366.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -15,31 +26,46 @@
                 <img src="./assets/img/logo.png" alt="Logo Web" width="50px">
                 <div class="menuButton">
                     <ul>
-                        <li><a href="index.html" target="_self">Inicio</a></li>
-                        <li>Conocenos</li>
+                        <li><button type="button" class="btn btn-success"><a href="index.html" 
+                            target="_self">Inicio</a></button></li>
+
+                        <li><button type="button" class="btn btn-success">Conocenos</button></li>
+
                         <li>
-                            <details>
-                                <summary>Recetas saladas</summary>
-                                <summary>Entradas</summary>
-                                <summary>Pastas</summary>
-                                <summary>Carnes</summary>
-                                <summary>Ensaladas</summary>
-                                <summary>Sopas</summary>
-                                <summary>Otros</summary>
-                            </details>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-success dropdown-toggle" 
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                  Recetas saladas
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Entradas</a></li>
+                                  <li><a class="dropdown-item" href="#">Pastas</a></li>
+                                  <li><a class="dropdown-item" href="#">Carnes</a></li>
+                                  <li><a class="dropdown-item" href="#">Ensaladas</a></li>
+                                  <li><a class="dropdown-item" href="#">Sopas</a></li>
+                                  <li><a class="dropdown-item" href="#">Otros</a></li>
+                                </ul>
+                              </div>
                         </li>
+
                         <li>
-                            <details>
-                                <summary>Recetas dulces</summary>
-                                <summary>Tortas y Budines</summary>
-                                <summary>Galletitas</summary>
-                                <summary>Tartas dulces</summary>
-                                <summary>Postres</summary>
-                                <summary>Helados</summary>
-                                <summary>Otros</summary>
-                            </details>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Recetas dulces
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Tortas y Budines</a></li>
+                                  <li><a class="dropdown-item" href="#">Galletitas</a></li>
+                                  <li><a class="dropdown-item" href="#">Tartas dulces</a></li>
+                                  <li><a class="dropdown-item" href="#">Postres</a></li>
+                                  <li><a class="dropdown-item" href="#">Helados</a></li>
+                                  <li><a class="dropdown-item" href="#">Otros</a></li>
+                                </ul>
+                              </div>
                         </li>
-                        <li>Tienda</li>
+
+                        <li><button type="button" class="btn btn-success">
+                          <i class="fa-solid fa-cart-shopping"></i>Tienda</button></li>
                     </ul>
                 </div>
             </nav>
@@ -49,7 +75,7 @@
             <h1>Todos pueden cocinar</h1>
             <br>
             <div>
-                <img src="./assets/img/cocinando.jpg!d" alt="Foto cocinando" width="400px">
+                <img src="./assets/img/cocinando.jpg!d" alt="Foto cocinando" width="500px" class="img-fluid">
 
                 <p>
                     En iCook buscamos facilitar la cocina a todos aquellos interesados, sin importar
@@ -66,96 +92,130 @@
         </section>
 
         <section id="principiantes"> <!-- Principiantes -->
-            <h1 id="princ">Recetas para Principiantes</h1>
+            <h1 id="princ">Recetas para Principiantes <br> 
+              <i class="fa-solid fa-child-reaching"></i> <i class="fa-solid fa-child-reaching"></i>
+              <i class="fa-solid fa-child-reaching"></i>
+            </h1>
             <br>
             
-            <div class="recipe">
-                <img src="./assets/img/fideos_con_crema.jpg" alt="Fideos con Crema" width="200px" height="135px">
-                <h3>Fideos con Crema</h3>
-                <p>
-                    Un plato básico de pastas que encanta por su sencillez de sabores. Asi como
-                    se caracteriza por su simpleza en su gusto, lo es en su preparación.
-                </p>
-
-                <button>Ir a Receta</button>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/fideos_con_crema.jpg" class="card-img-top" alt="Fideos con Crema"
+                width="200px" height="135px" class="img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Fideos con Crema</h5>
+                  <p class="card-text">Un plato básico de pastas que encanta por su sencillez de sabores. Asi 
+                    como se caracteriza por su simpleza en su gusto, lo es en su preparación.</p>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-outline-success">Ir a Receta</button>
+                </div>
             </div>
 
-            <div class="recipe">
-                <img src="./assets/img/asado_horno.jpg" alt="Asado al horno" width="200px" height="135px">
-                <h3>Asado al horno</h3>
-                <p>
-                    Un clásico de la abuela: carne, verduritas y salsa de tomate. ¿Qué puede 
-                    salir mal? Fácil de cocinar y perfecto para aparentar ser un experto.
-                </p>
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/img/asado_horno.jpg" class="card-img-top" alt="Asado al horno"
+                width="200px" height="135px" class="img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Asado al Horno</h5>
+                  <p class="card-text">Un clásico de la abuela: carne, verduritas y salsa de tomate. ¿Qué puede 
+                    salir mal? Fácil de cocinar y perfecto para aparentar ser un experto.</p>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-outline-success">Ir a Receta</button>
+                </div>
+              </div> 
 
-                <button>Ir a Receta</button>
-            </div>
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/img/salteado.jpg" class="card-img-top" alt="Salteado de verduras"
+                width="200px" height="135px" class="img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Salteado de Verduras</h5>
+                  <p class="card-text">Una opción saludable y rápida. Después de peparar esta receta te aseguro que será
+                    tu nuevo respaldo para salir del apuro y matar el hambre.</p>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-outline-success">Ir a Receta</button>
+                </div>
+              </div> 
 
-            <div class="recipe">
-                <img src="./assets/img/salteado.jpg" alt="Salteado de verduras" width="200px" height="135px">
-                <h3>Salteado de verduras</h3>
-                <p>
-                    Una opción saludable y rápida. Después de peparar esta receta te aseguro que será
-                    tu nuevo respaldo para salir del apuro y matar el hambre.
-                </p>
-
-                <button>Ir a Receta</button>
-            </div>
-
-            <div class="recipe">
-                <img src="./assets/img/milanesa_ensalada.jpg" alt="Milanesa con ensalada" width="200px" 
-                height="135px">
-                <h3>Milanesas con ensalada</h3>
-                <p>
-                    La receta que todos necesitamos saber para satisfacer ese antojo recurrente. 
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/img/milanesa_ensalada.jpg" class="card-img-top" alt="Milanesa con ensalada"
+                width="200px" height="135px" class="img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Milanesa con Ensalada</h5>
+                  <p class="card-text">La receta que todos necesitamos saber para satisfacer ese antojo recurrente. 
                     Un plato muy elegido por niños, y tan fácil de hacer que hasta ellos pueden 
-                    prepararlo.
-                </p>
-
-                <button>Ir a Receta</button>
-            </div>
+                    prepararlo.</p>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-outline-success">Ir a Receta</button>
+                </div>
+              </div> 
 
         </section>
 
         <section id="nations"> <!-- Nacionalidad-->
             <h1 id="countries">Recetas según Nacionalidad</h1>
 
-            <div>
-                <img src="./assets/img/flags/argentina.webp" alt="Bandera de Argentina" width="40px">
-                <p>Comida argentina</p>
-
-                <img src="./assets/img/flags/EEUU.webp" alt="Bandera de EEUU" width="40px">
-                <p>Comida americana</p>
-
-                <img src="./assets/img/flags/mexico.webp" alt="Bandera de México" width="40px">
-                <p>Comida mexicana</p>
-            </div>
-
-            <div>
-                <img src="./assets/img/flags/francia.png" alt="Bandera de Francia" width="40px">
-                <p>Comida francesa</p>
-
-                <img src="./assets/img/flags/italia.png" alt="Bandera de Italia" width="40px">
-                <p>Comida italiana</p>
-
-                <img src="./assets/img/flags/inglaterra.jpg" alt="Bandera de Inglaterra" width="40px">
-                <p>Comida inglesa</p>
-            </div>
-
-            <div>
-                <img src="./assets/img/flags/grecia.jpg" alt="Bandera de Grecia" width="40px">
-                <p>Comida griega</p>
-
-                <img src="./assets/img/flags/china.jfif" alt="Bandera de China" width="40px">
-                <p>Comida china</p>
-
-                <img src="./assets/img/flags/otros.png" alt="Simbolo mundo" width="40px">
-                <p>Otros</p>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-block w-100">  
+                    <img src="./assets/img/flags/argentina.webp" alt="Bandera de Argentina" width="40px"
+                    class="img-fluid">
+                    <p>Comida argentina</p>
+    
+                    <img src="./assets/img/flags/EEUU.webp" alt="Bandera de EEUU" width="40px">
+                    <p>Comida americana</p>
+    
+                    <img src="./assets/img/flags/mexico.webp" alt="Bandera de México" width="40px">
+                    <p>Comida mexicana</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <img src="./assets/img/flags/francia.png" alt="Bandera de Francia" width="40px"
+                    class="img-fluid">
+                    <p>Comida francesa</p>
+    
+                    <img src="./assets/img/flags/italia.png" alt="Bandera de Italia" width="40px"
+                    class="img-fluid">
+                    <p>Comida italiana</p>
+    
+                    <img src="./assets/img/flags/inglaterra.jpg" alt="Bandera de Inglaterra" width="40px"
+                    class="img-fluid">
+                    <p>Comida inglesa</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <img src="./assets/img/flags/grecia.jpg" alt="Bandera de Grecia" width="40px"
+                    class="img-fluid">
+                    <p>Comida griega</p>
+    
+                    <img src="./assets/img/flags/china.jfif" alt="Bandera de China" width="40px"
+                    class="img-fluid">
+                    <p>Comida china</p>
+    
+                    <i class="fa-solid fa-globe" height="200px"></i>
+                    <p>Otros</p>
+                </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" 
+              data-bs-slide="prev" style="background-color: whitesmoke">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" 
+              data-bs-slide="next" style="background-color:whitesmoke">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
         </section>
 
         <section id="diets"> <!-- Restricciones -->
-            <h1 id="diet">Recetas para Todos</h1>
+            <h1 id="diet">Recetas para Todos <i class="fa-solid fa-wheat-awn-circle-exclamation"></i></h1>
 
             <p>La comida no es la excepción a la inclusión. Cada vez es más la gente con dietas 
                 que "prohiben" el consumo de cierto alimento, ya sea por salud, gustos o ideales. 
@@ -166,37 +226,47 @@
             <p>Seleccione a continuación toda restricción que quiera aplicar a su receta:
                 <br>(si desea marcar más de una opción hagalo presionando la tecla Ctrl)</p>
 
-            <form>
-                <select name="diet" multiple>
-                    <option>Vegetariano</option>
-                    <option>Vegano</option>
-                    <option>Celíaco</option>
-                    <option>Diabético</option>
-                    <option>Hipertenso</option>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Dietas</label>
+                <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Elija...</option>
+                    <option value="1">Vegetariano</option>
+                    <option value="2">Vegano</option>
+                    <option value="3">Celiaco</option>
+                    <option value="4">Diabetico</option>
+                    <option value="5">Hipertenso</option>
+                    <option value="6">Ninguna</option>
                 </select>
+            </div>
 
-                <input type="submit" value="Enviar">
-            </form>
+                <button type="button" class="btn btn-outline-success">Buscar</button>
         </section>
 
         <footer>
-            <div> <!-- Redes y Contacto-->
-                <h3>Redes y Contacto</h3>
+            <div id="social"> <!-- Redes y Contacto-->
+                <h3>Redes y Contacto</h3><br>
 
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="./assets/img/ig_logo.png" alt="Logo Ig" width="40px">
-                </a>
-                <p>@iCook_ig</p>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="./assets/img/ig_logo.png" alt="Logo Ig" width="30px" class="img-fluid">
+                    </a>
+                    <p>@iCook_ig</p>
+                </div><hr>
 
-                <a href="https://twitter.com/?lang=es" target="_blank">
-                    <img src="./assets/img/twitter_logo.png" alt="Logo Twitter" width="40px">
-                </a>
-                <p>@iCook_tw</p>
+                <div>
+                    <a href="https://twitter.com/?lang=es" target="_blank">
+                        <img src="./assets/img/twitter_logo.png" alt="Logo Twitter" width="30px" 
+                        class="img-fluid">
+                    </a>
+                    <p>@iCook_tw</p>
+                </div><hr>
 
-                <a>
-                    <img src="./assets/img/mail_logo.jpg" alt="Mail" width="40px">
-                </a>
-                <p>icookrecipes@gmail.com</p>
+                <div>
+                    <a>
+                      <i class="fa-solid fa-envelope" width="30px"></i>
+                    </a>
+                    <p>icookrecipes@gmail.com</p>
+                </div>
             </div>
 
             <div> <!-- Regresando a iCook -->
@@ -212,12 +282,43 @@
             <div> <!-- Feedback -->
                 <p>Nos es de mucha ayuda escucharte! Deja tu opinión sobre iCook aqui</p>
 
-                <textarea name="feedback" rows="10" cols="40" placeholder="Escriba aqui"></textarea>
+                <div class="input-group">
+                    <span class="input-group-text">Comentarios</span>
+                    <textarea class="form-control" aria-label="With textarea" rows="8"></textarea>
+                  </div>
             </div>
 
             <div> <!-- Notificaciones -->
-                <p>Si deseas recibir notificaciones de iCook dejanos tu mail</p>
-                <input name="mail" type="email" placeholder="Ingrese su email">
+                <p>Si deseas recibir notificaciones de iCook dejanos tu información</p><br>
+                
+                <div class="input-group">
+                    <span class="input-group-text">Nombre y Apellido</span>
+                    <input type="text" aria-label="First name" class="form-control" placeholder="Nombre">
+                    <input type="text" aria-label="Last name" class="form-control" placeholder="Apellido">
+                  </div>
+                
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Ingrese su email" 
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                  </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">DNI</span>
+                    <input type="number" class="form-control" aria-label="Sizing example input" 
+                    aria-describedby="inputGroup-sizing-default" placeholder="Ingrese su DNI aqui">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Telefono</span>
+                    <input type="tel" class="form-control" aria-label="Sizing example input" 
+                    aria-describedby="inputGroup-sizing-default" placeholder="Ejem. 11-2345-6789" 
+                    pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}">
+                </div>
+
+                <input name="info" type="checkbox"> Quiero recibir informacion <br><br>
+
+                <button type="button" class="btn btn-success">Enviar</button>
             </div>
         </footer>
     </body>

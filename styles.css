@@ -1,15 +1,9 @@
 body{
-    margin: 20px
-}
-
-#main{
-    background-color: rgb(255, 235, 204);
-    padding: 20px;
-    margin: 20px
+    margin: 20px;
 }
 
 nav{
-    background-color: rgb(213, 236, 214);
+    background-color: rgb(230, 248, 231);
     display: flex;
     flex-direction: row;
     height:110px;
@@ -22,7 +16,7 @@ nav ul{
 
 /* Le sacamos el • a los items del nav*/
 nav li{
-    margin-left: 20px;
+    margin-left: 10px;
     list-style: none
 }
 
@@ -95,12 +89,22 @@ nav img{
     width: 200px;
     height: 150px;
     text-align: justify;
-    padding-right: 15px
+    padding-right: 20px;
 }
 
-.recipe {
-    border: 1px solid grey;
-    padding:5px;
+#principiantes img{
+    width: 210px;
+    height: 135px
+}
+
+.bouncing_icons {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+.card {
+    background-color: beige;
+    margin: 2px
 }
 
 #nations {

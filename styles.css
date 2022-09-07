@@ -1,9 +1,5 @@
-body{
-    margin: 20px;
-}
-
 nav{
-    background-color: rgb(230, 248, 231);
+    background-color: rgb(111, 175, 111);
     display: flex;
     flex-direction: row;
     height:110px;
@@ -14,13 +10,11 @@ nav ul{
     display: flex
 }
 
-/* Le sacamos el • a los items del nav*/
 nav li{
     margin-left: 10px;
     list-style: none
 }
 
-/* Le sacamos el subrayado a los enlaces del nav*/
 nav a{
     text-decoration: none;
     color:white;
@@ -30,10 +24,9 @@ nav a:hover{
     color: white
 }
 
-/* Hay que agregarle el display:flex porque esta dentro del nav, que tiene display:flex*/
 nav img{
     display:flex;
-    width: auto; /* para que tome el tamaño de la pantalla y lo ajuste al ancho de la misma */
+    width: 50px;
     max-height: 80px
 }
 
@@ -44,15 +37,18 @@ nav img{
     justify-content: flex-end;
 }
 
-#bienvenida{
-    background-color: blanchedalmond;
-    margin:30px;
-    padding:20px;
+#bienvenida {
+    background-image: url(./assets/img/cocinando.jpg);
+    background-position: center;
+    margin:50px 100px;
+    padding: 70px;
+    position: relative;
 }
 
 #bienvenida h1{
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 #bienvenida div{
@@ -61,8 +57,8 @@ nav img{
 }
 
 #bienvenida p{
-    width: 300px;
-    text-align: justify;
+    width: 50%;
+    text-align: center;
 }
 
 #bienvenida p b{
@@ -70,15 +66,14 @@ nav img{
 }
 
 #principiantes {
-    background-color: rgb(254, 255, 205);
-    display:flex;
-    margin:30px;
+    margin:0 30px 30px 30px;
     padding:20px;
-    justify-content: space-evenly;
 }
 
 #principiantes h1{
+    background-color: rgb(230, 248, 231);
     text-align: center;
+    padding: 20px;
 }
 
 #principiantes h5{
@@ -86,14 +81,13 @@ nav img{
 }
 
 #principiantes p{
-    width: 200px;
+    width: auto;
     height: 150px;
     text-align: justify;
-    padding-right: 20px;
 }
 
 #principiantes img{
-    width: 210px;
+    width: 90%;
     height: 135px
 }
 
@@ -103,20 +97,42 @@ nav img{
 }
 
 .card {
-    background-color: beige;
-    margin: 2px
+    padding: 10px;
+    background-color: rgb(254, 255, 205);
+    display: flex;
+    align-items: center;
 }
 
 #nations {
-    background-color:rgb(255, 235, 204);
+    background-color:rgb(230, 248, 231);
+    /* background-color: rgb(111, 175, 111); */
     display:flex;
     margin:30px;
     padding:20px;
     justify-content: space-evenly;
 }
 
+.carousel-item {
+    padding: 0 50px 0 50px
+}
+
+.carousel-control-prev, .carousel-control-next {
+    height:20%;
+    border-radius: 50%;
+    margin-top: 35%
+}
+
+.carousel-control-prev :hover, .carousel-control-next :hover {
+    background-color: whitesmoke;
+    border-style:none;
+    border-radius: 50%;
+    border-color:rgb(38, 145, 65);
+    border-style: solid;
+    border-width: 1px;
+}
+
 #diets {
-    background-color:rgb(254, 255, 205);
+    background-color:rgb(230, 248, 231);
     margin:30px;
     padding:20px;
 }
@@ -125,8 +141,52 @@ nav img{
     align-content: center;
 }
 
+#resenas {
+    margin: 40px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resenas h4 {
+    color:rgb(156, 154, 154);
+}
+
+#resenas h2 {
+    margin-bottom: 30px;
+    font-style: italic;
+    color:darkgreen;
+}
+
+#resenas .col-4 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#resenas .col-4 p {
+    height: 200px;
+    width: 80%;
+}
+
+#resenas h5 {
+    color: darkgreen
+}
+
+#resenas h6 {
+    color: rgb(15, 172, 15)
+}
+
+#resenas img {
+    width: 50%;
+    border-radius: 50%;
+}
+
 footer {
-    background-color:rgb(213, 236, 214);
+    background-color:rgb(111, 175, 111);
     display:flex;
     justify-content: space-evenly;
     padding: 15px;
@@ -145,7 +205,7 @@ footer a{
 }
 
 footer a:hover{
-    color: rgba(9, 204, 51, 0.521)
+    color: rgba(203, 221, 41, 0.788)
 }
 
 footer div{
@@ -155,3 +215,10 @@ footer div{
 #social div {
     display: flex;
 }
+
+/*
+COLORES
+Verde "oscuro" header: rgb(111, 175, 111)
+Verde clarito: rgb(230, 248, 231)
+Amarillo clarito: rgb(254, 255, 205)
+*/

@@ -24,9 +24,8 @@
 
     <body>
         <header>
-
-            <nav> <!-- Cada opcion tendria un enlace a las respectivas paginas -->
-                <img src="./assets/img/logo.png" alt="Logo Web" width="50px">
+            <nav class="container-fluid"> <!-- Cada opcion tendria un enlace a las respectivas paginas -->
+                <img src="./assets/img/stroopwafel-solid.svg" alt="Logo Web" width="50px">
                 <div class="menuButton">
                     <ul>
                         <li><button type="button" class="btn btn-success"><a href="index.html" 
@@ -74,179 +73,235 @@
             </nav>
         </header>
 
-        <section id="bienvenida"> <!-- Bienvenida -->
-            <h1>Todos pueden cocinar</h1>
-            <br>
-            <div>
-                <img src="./assets/img/cocinando.jpg!d" alt="Foto cocinando" width="500px" class="img-fluid">
-
-                <p>
+          <section class="container" id="bienvenida"> <!-- Bienvenida -->
+            <div class="row">
+              <h1 class="col-12"><b>Todos pueden cocinar</b></h1>
+              <br><br>
+                <p class="col-6">
                     En iCook buscamos facilitar la cocina a todos aquellos interesados, sin importar
                     la edad, experiencia cocinando, faciliad para cocinar, creatividad, dietas, 
                     restricciones y demás diferencias. <br>
                     Aqui encontrarás recetas clasificadas según nacionalidad, según dificultad y
                     según categoria de plato (dulce o salado). Te invitamos a explorar nuestro sitio web.
                     <br>
-                    Si estas buscando un lugar donde aprender y comer rico, llegaste al lugar indicado
+                    Si estas buscando un lugar donde aprender y comer rico, llegaste al lugar indicado.
                     <br> 
                     <b>¡Bienvenido!</b>
                 </p>
             </div>
-        </section>
+          </section>
 
-        <section id="principiantes"> <!-- Principiantes -->
-            <h1 id="princ">Recetas para Principiantes <br> 
-              <div class="bouncing_icons">
-                <i class="fa-solid fa-child-reaching"></i> <i class="fa-solid fa-child-reaching"></i>
-                <i class="fa-solid fa-child-reaching"></i>
+          <section id="principiantes"> <!-- Principiantes -->
+              <h1 id="princ">Recetas para Principiantes <br> 
+                <div class="bouncing_icons">
+                  <i class="fa-solid fa-child-reaching"></i> <i class="fa-solid fa-child-reaching"></i>
+                  <i class="fa-solid fa-child-reaching"></i>
+                </div>
+              </h1>
+              <br>
+              
+              <div class="container">
+                <div class="row">
+                  <div class="card col-3">
+                      <img src="./assets/img/fideos_con_crema.jpg" class="card-img-top" alt="Fideos con Crema"
+                      class="img-fluid">
+                      <div class="card-body">
+                        <h5 class="card-title">Fideos con Crema</h5>
+                        <p class="card-text">Un plato básico de pastas que encanta por su sencillez de sabores. Asi 
+                          como se caracteriza por su simpleza en su gusto, lo es en su preparación.</p>
+                      </div>
+                      <div class="card-body">
+                          <button type="button" class="btn btn-outline-success">Ir a Receta</button>
+                      </div>
+                  </div>
+
+                    <div class="card col-3">
+                      <img src="./assets/img/asado_horno.jpg" class="card-img-top" alt="Asado al horno"
+                      width="200px" height="135px" class="img-fluid">
+                      <div class="card-body">
+                        <h5 class="card-title">Asado al Horno</h5>
+                        <p class="card-text">Un clásico de la abuela: carne, verduritas y salsa de tomate. ¿Qué puede 
+                          salir mal? Fácil de cocinar y perfecto para aparentar ser un experto.</p>
+                      </div>
+                      <div class="card-body">
+                          <button type="button" class="btn btn-outline-success">Ir a Receta</button>
+                      </div>
+                    </div> 
+
+                    <div class="card col-3">
+                      <img src="./assets/img/salteado.jpg" class="card-img-top" alt="Salteado de verduras"
+                      width="200px" height="135px" class="img-fluid">
+                      <div class="card-body">
+                        <h5 class="card-title">Salteado de Verduras</h5>
+                        <p class="card-text">Una opción saludable y rápida. Después de peparar esta receta te aseguro que será
+                          tu nuevo respaldo para salir del apuro y matar el hambre.</p>
+                      </div>
+                      <div class="card-body">
+                          <button type="button" class="btn btn-outline-success">Ir a Receta</button>
+                      </div>
+                    </div> 
+
+                    <div class="card col-3">
+                      <img src="./assets/img/milanesa_ensalada.jpg" class="card-img-top" alt="Milanesa con ensalada"
+                      width="200px" height="135px" class="img-fluid">
+                      <div class="card-body">
+                        <h5 class="card-title">Milanesa con Ensalada</h5>
+                        <p class="card-text">La receta que todos necesitamos saber para satisfacer ese antojo recurrente. 
+                          Un plato muy elegido por niños, y tan fácil de hacer que hasta ellos pueden 
+                          prepararlo.</p>
+                      </div>
+                      <div class="card-body">
+                          <button type="button" class="btn btn-outline-success">Ir a Receta</button>
+                      </div>
+                    </div> 
               </div>
-            </h1>
-            <br>
-            
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/img/fideos_con_crema.jpg" class="card-img-top" alt="Fideos con Crema"
-                class="img-fluid">
-                <div class="card-body">
-                  <h5 class="card-title">Fideos con Crema</h5>
-                  <p class="card-text">Un plato básico de pastas que encanta por su sencillez de sabores. Asi 
-                    como se caracteriza por su simpleza en su gusto, lo es en su preparación.</p>
-                </div>
-                <div class="card-body">
-                    <button type="button" class="btn btn-outline-success">Ir a Receta</button>
-                </div>
-            </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="./assets/img/asado_horno.jpg" class="card-img-top" alt="Asado al horno"
-                width="200px" height="135px" class="img-fluid">
-                <div class="card-body">
-                  <h5 class="card-title">Asado al Horno</h5>
-                  <p class="card-text">Un clásico de la abuela: carne, verduritas y salsa de tomate. ¿Qué puede 
-                    salir mal? Fácil de cocinar y perfecto para aparentar ser un experto.</p>
-                </div>
-                <div class="card-body">
-                    <button type="button" class="btn btn-outline-success">Ir a Receta</button>
-                </div>
-              </div> 
-
-              <div class="card" style="width: 18rem;">
-                <img src="./assets/img/salteado.jpg" class="card-img-top" alt="Salteado de verduras"
-                width="200px" height="135px" class="img-fluid">
-                <div class="card-body">
-                  <h5 class="card-title">Salteado de Verduras</h5>
-                  <p class="card-text">Una opción saludable y rápida. Después de peparar esta receta te aseguro que será
-                    tu nuevo respaldo para salir del apuro y matar el hambre.</p>
-                </div>
-                <div class="card-body">
-                    <button type="button" class="btn btn-outline-success">Ir a Receta</button>
-                </div>
-              </div> 
-
-              <div class="card" style="width: 18rem;">
-                <img src="./assets/img/milanesa_ensalada.jpg" class="card-img-top" alt="Milanesa con ensalada"
-                width="200px" height="135px" class="img-fluid">
-                <div class="card-body">
-                  <h5 class="card-title">Milanesa con Ensalada</h5>
-                  <p class="card-text">La receta que todos necesitamos saber para satisfacer ese antojo recurrente. 
-                    Un plato muy elegido por niños, y tan fácil de hacer que hasta ellos pueden 
-                    prepararlo.</p>
-                </div>
-                <div class="card-body">
-                    <button type="button" class="btn btn-outline-success">Ir a Receta</button>
-                </div>
-              </div> 
-
-        </section>
-
-        <section id="nations"> <!-- Nacionalidad-->
-            <h1 id="countries">Recetas según Nacionalidad</h1>
-
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="d-block w-100">  
-                    <img src="./assets/img/flags/argentina.webp" alt="Bandera de Argentina" width="40px"
-                    class="img-fluid">
-                    <p>Comida argentina</p>
-    
-                    <img src="./assets/img/flags/EEUU.webp" alt="Bandera de EEUU" width="40px">
-                    <p>Comida americana</p>
-    
-                    <img src="./assets/img/flags/mexico.webp" alt="Bandera de México" width="40px">
-                    <p>Comida mexicana</p>
-                </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="d-block w-100">
-                    <img src="./assets/img/flags/francia.png" alt="Bandera de Francia" width="40px"
-                    class="img-fluid">
-                    <p>Comida francesa</p>
-    
-                    <img src="./assets/img/flags/italia.png" alt="Bandera de Italia" width="40px"
-                    class="img-fluid">
-                    <p>Comida italiana</p>
-    
-                    <img src="./assets/img/flags/inglaterra.jpg" alt="Bandera de Inglaterra" width="40px"
-                    class="img-fluid">
-                    <p>Comida inglesa</p>
-                </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="d-block w-100">
-                    <img src="./assets/img/flags/grecia.jpg" alt="Bandera de Grecia" width="40px"
-                    class="img-fluid">
-                    <p>Comida griega</p>
-    
-                    <img src="./assets/img/flags/china.jfif" alt="Bandera de China" width="40px"
-                    class="img-fluid">
-                    <p>Comida china</p>
-    
-                    <i class="fa-solid fa-globe" height="200px"></i>
-                    <p>Otros</p>
-                </div>
-                </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" 
-              data-bs-slide="prev" style="background-color: whitesmoke">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" 
-              data-bs-slide="next" style="background-color:whitesmoke">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+
+          </section>
+
+          <section id="nations"> <!-- Nacionalidad-->
+              <h1 id="countries">Recetas según Nacionalidad</h1>
+
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-block w-100">  
+                      <img src="./assets/img/flags/argentina.webp" alt="Bandera de Argentina" width="40px"
+                      class="img-fluid">
+                      <p>Comida argentina</p>
+      
+                      <img src="./assets/img/flags/EEUU.webp" alt="Bandera de EEUU" width="40px">
+                      <p>Comida americana</p>
+      
+                      <img src="./assets/img/flags/mexico.webp" alt="Bandera de México" width="40px">
+                      <p>Comida mexicana</p>
+                  </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block w-100">
+                      <img src="./assets/img/flags/francia.png" alt="Bandera de Francia" width="40px"
+                      class="img-fluid">
+                      <p>Comida francesa</p>
+      
+                      <img src="./assets/img/flags/italia.png" alt="Bandera de Italia" width="40px"
+                      class="img-fluid">
+                      <p>Comida italiana</p>
+      
+                      <img src="./assets/img/flags/inglaterra.jpg" alt="Bandera de Inglaterra" width="40px"
+                      class="img-fluid">
+                      <p>Comida inglesa</p>
+                  </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block w-100">
+                      <img src="./assets/img/flags/grecia.jpg" alt="Bandera de Grecia" width="40px"
+                      class="img-fluid">
+                      <p>Comida griega</p>
+      
+                      <img src="./assets/img/flags/china.jfif" alt="Bandera de China" width="40px"
+                      class="img-fluid">
+                      <p>Comida china</p>
+      
+                      <i class="fa-solid fa-globe" height="200px"></i>
+                      <p>Otros</p>
+                  </div>
+                  </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" 
+                data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" 
+                data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+
+              </div>
+          </section>
+
+          <section id="diets"> <!-- Restricciones -->
+              <h1 id="diet">Recetas para Todos <i class="fa-solid fa-wheat-awn-circle-exclamation"></i></h1>
+
+              <p>La comida no es la excepción a la inclusión. Cada vez es más la gente con dietas 
+                  que "prohiben" el consumo de cierto alimento, ya sea por salud, gustos o ideales. 
+                  En iCook pensamos en todos nuestros usuarios actuales y potenciales, por lo que 
+                  ofrecemos recetas que satisfacen a todos.
+              </p>
+              <br>
+              <p>Seleccione a continuación toda restricción que quiera aplicar a su receta:</p>
+
+              <div class="input-group mb-3">
+                  <label class="input-group-text" for="inputGroupSelect01">Dietas</label>
+                  <select class="form-select" id="inputGroupSelect01">
+                      <option selected>Elija...</option>
+                      <option value="1">Vegetariano</option>
+                      <option value="2">Vegano</option>
+                      <option value="3">Celiaco</option>
+                      <option value="4">Diabetico</option>
+                      <option value="5">Hipertenso</option>
+                      <option value="6">Ninguna</option>
+                  </select>
+              </div>
+
+                  <button type="button" class="btn btn-outline-success">Buscar</button>
+          </section>
+
+          <section id="resenas"> <!-- Reseñas -->
+            <h4>No son solo nuestras palabras...</h4>
+            <h2>¡Escucha a otros usuarios como vos!</h2>
+
+            <div class="container-fliud">
+              <div class="row">
+                <div class="col-4">
+                  <img src="./assets/img/usuario_1.png" alt="Img usuario">
+
+                  <h5>Juan Perez</h5>
+                  <h6>@juan_perez_123</h6>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quam consequatur tempora aut 
+                    ipsa. Eos, laudantium corporis? Inventore, voluptates dolorum ratione beatae hic sapiente 
+                    reiciendis aperiam, possimus aspernatur harum explicabo.
+                  </p>
+                </div>
+
+                <div class="col-4">
+                  <img src="./assets/img/usuario_2.png" alt="Img usuario">
+
+                  <h5>Mica Gonzales</h5>
+                  <h6>@mikitagnzl</h6>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quam consequatur tempora aut 
+                    ipsa. Eos, laudantium corporis? Inventore, voluptates dolorum ratione beatae hic sapiente 
+                    reiciendis aperiam, possimus aspernatur harum explicabo.
+                  </p>
+                </div>
+                
+
+                <div class="col-4">
+                  <img src="./assets/img/usuario_3.png" alt="Img usuario">
+
+                  <h5>Tomas Sanchez</h5>
+                  <h6>@tomanchez</h6>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quam consequatur tempora aut 
+                    ipsa. Eos, laudantium corporis? Inventore, voluptates dolorum ratione beatae hic sapiente 
+                    reiciendis aperiam, possimus aspernatur harum explicabo.
+                  </p>
+                </div>
+                
+              </div>
             </div>
-        </section>
 
-        <section id="diets"> <!-- Restricciones -->
-            <h1 id="diet">Recetas para Todos <i class="fa-solid fa-wheat-awn-circle-exclamation"></i></h1>
+          </section>
 
-            <p>La comida no es la excepción a la inclusión. Cada vez es más la gente con dietas 
-                que "prohiben" el consumo de cierto alimento, ya sea por salud, gustos o ideales. 
-                En iCook pensamos en todos nuestros usuarios actuales y potenciales, por lo que 
-                ofrecemos recetas que satisfacen a todos.
-            </p>
-            <br>
-            <p>Seleccione a continuación toda restricción que quiera aplicar a su receta:</p>
-
-            <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupSelect01">Dietas</label>
-                <select class="form-select" id="inputGroupSelect01">
-                    <option selected>Elija...</option>
-                    <option value="1">Vegetariano</option>
-                    <option value="2">Vegano</option>
-                    <option value="3">Celiaco</option>
-                    <option value="4">Diabetico</option>
-                    <option value="5">Hipertenso</option>
-                    <option value="6">Ninguna</option>
-                </select>
-            </div>
-
-                <button type="button" class="btn btn-outline-success">Buscar</button>
-        </section>
-
-        <footer>
+        <footer class="container-fluid">
             <div id="social"> <!-- Redes y Contacto-->
                 <h3>Redes y Contacto</h3><br>
 

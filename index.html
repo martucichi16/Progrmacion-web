@@ -27,6 +27,7 @@
           <!-- nav para compus -->
             <nav class="container-fluid" id="nav_lg"> <!-- Cada opcion tendria un enlace a las respectivas paginas -->
               <img src="./assets/img/Logo_iCook.png" alt="Logo Web">
+
                 <div class="menuButton">
                     <ul>
                         <li><button type="button" class="btn btn-success"><a href="index.html" 
@@ -70,6 +71,8 @@
                         <li><button type="button" class="btn btn-success">
                           <i class="fa-solid fa-cart-shopping"></i>Tienda</button></li>
                     </ul>
+
+                    <p>Si ya eres parte de la comunidad de iCook puedes iniciar sesión <a href="">aqui</a></p>
                 </div>
             </nav>
 
@@ -118,6 +121,8 @@
                     </li>
 
                     <li><a href="" target="_self"><i class="fa-solid fa-cart-shopping"></i>Tienda</a></li>
+
+                    <li><a href="" target="_self">Iniciar Sesión</a></li>
                 </ul>
                 </div>
               </div>
@@ -134,9 +139,9 @@
 
           <section class="container" id="bienvenida"> <!-- Bienvenida -->
             <div class="row">
-              <h1 class="col-12"><b>Todos pueden cocinar</b></h1>
+              <h1 class="col-12 col-lg-12"><b>Todos pueden cocinar</b></h1>
               <br><br>
-                <p class="col-6">
+                <p class="col-12 col-lg-12">
                     En iCook buscamos facilitar la cocina a todos aquellos interesados, sin importar
                     la edad, experiencia cocinando, faciliad para cocinar, creatividad, dietas, 
                     restricciones y demás diferencias. <br>
@@ -219,7 +224,9 @@
           </section>
 
           <section id="nations"> <!-- Nacionalidad-->
-              <h1 id="countries">Recetas según Nacionalidad</h1>
+            <div>
+                <h1 id="countries">Recetas según Nacionalidad</h1>
+            </div>
 
               <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -360,26 +367,30 @@
 
           </section>
 
+          <p id="mobile_feedback">
+            Si estás interesado en recibir notificaciones o ayudarnos dandonos tu opinión acerca de la página, ingresa 
+            <a href="">aqui</a>. <b>Gracias!!</b>
+          </p>
+
         <footer class="container-fluid">
             <div id="social"> <!-- Redes y Contacto-->
                 <h3>Redes y Contacto</h3><br>
 
-                <div>
+                <div class="contact">
                     <a href="https://www.instagram.com/" target="_blank">
-                        <img src="./assets/img/ig_logo.png" alt="Logo Ig" width="30px" class="img-fluid">
+                      <i class="fa-brands fa-instagram"></i>
                     </a>
                     <p>@iCook_ig</p>
                 </div><hr>
 
-                <div>
+                <div class="contact">
                     <a href="https://twitter.com/?lang=es" target="_blank">
-                        <img src="./assets/img/twitter_logo.png" alt="Logo Twitter" width="30px" 
-                        class="img-fluid">
+                      <i class="fa-brands fa-twitter"></i>
                     </a>
                     <p>@iCook_tw</p>
                 </div><hr>
 
-                <div>
+                <div class="contact">
                     <a>
                       <i class="fa-solid fa-envelope" width="30px"></i>
                     </a>
@@ -397,7 +408,7 @@
                 </ul>
             </div>
 
-            <div> <!-- Feedback -->
+            <div id="feedback"> <!-- Feedback -->
                 <p>Nos es de mucha ayuda escucharte! Deja tu opinión sobre iCook aqui</p>
 
                 <div class="input-group">
@@ -406,7 +417,7 @@
                   </div>
             </div>
 
-            <div> <!-- Notificaciones -->
+            <div id="notif"> <!-- Notificaciones -->
                 <p>Si deseas recibir notificaciones de iCook dejanos tu información</p><br>
                 
                 <div class="input-group">

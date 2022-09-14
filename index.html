@@ -24,7 +24,7 @@
 
     <body>
         <header>
-          <!-- nav para compus -->
+          <!-- nav para computadora -->
             <nav class="container-fluid" id="nav_lg"> <!-- Cada opcion tendria un enlace a las respectivas paginas -->
               <img src="./assets/img/Logo_iCook.png" alt="Logo Web">
 
@@ -76,65 +76,78 @@
                 </div>
             </nav>
 
-          <!-- nav para celu -->
-          <div id="header_mobile">
-            <img src="./assets/img/Logo_iCook.png" alt="Logo Web">
-            
-            <div id="nav_mobile">
-              <div class="collapse" id="navbarToggleExternalContent">
-                <div class="p-4">
-                  <ul>
-                    <li><a href="index.html" target="_self">Inicio</a></li>
-                    <li><a href="" target="_self">Conocenos</a></li>
+          <!-- Nav mobile -->  
+            <div id="mobile_nav">
+              <nav class="navbar navbar-light">
+                  <div class="container-fluid">
+                      
+                      <div id="logo">
+                        <img src="./assets/img/Logo_iCook.png" alt="Logo Web">
+                      </div>
 
-                    <li>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-success dropdown-toggle" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                              Recetas saladas
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Entradas</a></li>
-                              <li><a class="dropdown-item" href="#">Pastas</a></li>
-                              <li><a class="dropdown-item" href="#">Carnes</a></li>
-                              <li><a class="dropdown-item" href="#">Ensaladas</a></li>
-                              <li><a class="dropdown-item" href="#">Sopas</a></li>
-                              <li><a class="dropdown-item" href="#">Otros</a></li>
-                            </ul>
-                          </div>
-                    </li>
+                  <!-- Boton para abrir -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" 
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                    <li>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                              Recetas dulces
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Tortas y Budines</a></li>
-                              <li><a class="dropdown-item" href="#">Galletitas</a></li>
-                              <li><a class="dropdown-item" href="#">Tartas dulces</a></li>
-                              <li><a class="dropdown-item" href="#">Postres</a></li>
-                              <li><a class="dropdown-item" href="#">Helados</a></li>
-                              <li><a class="dropdown-item" href="#">Otros</a></li>
-                            </ul>
-                          </div>
-                    </li>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      
+                      <div class="offcanvas-header">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      
+                      <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
 
-                    <li><a href="" target="_self"><i class="fa-solid fa-cart-shopping"></i>Tienda</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Conocenos</a></li>
 
-                    <li><a href="" target="_self">Iniciar Sesión</a></li>
-                </ul>
-                </div>
-              </div>
-              <nav class="navbar navbar-dark">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-              </nav>
+                          <li>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-success dropdown-toggle" 
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                  Recetas saladas
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Entradas</a></li>
+                                  <li><a class="dropdown-item" href="#">Pastas</a></li>
+                                  <li><a class="dropdown-item" href="#">Carnes</a></li>
+                                  <li><a class="dropdown-item" href="#">Ensaladas</a></li>
+                                  <li><a class="dropdown-item" href="#">Sopas</a></li>
+                                  <li><a class="dropdown-item" href="#">Otros</a></li>
+                                </ul>
+                              </div>
+                          </li>
+
+                          <li>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Recetas dulces
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Tortas y Budines</a></li>
+                                  <li><a class="dropdown-item" href="#">Galletitas</a></li>
+                                  <li><a class="dropdown-item" href="#">Tartas dulces</a></li>
+                                  <li><a class="dropdown-item" href="#">Postres</a></li>
+                                  <li><a class="dropdown-item" href="#">Helados</a></li>
+                                  <li><a class="dropdown-item" href="#">Otros</a></li>
+                                </ul>
+                              </div>
+                        </li>
+
+                          <li class="nav-item"><a class="nav-link" href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>Tienda
+                          </a></li>
+
+                          <li class="nav-item"><a class="nav-link" href="#">Iniciar sesión</a></li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
             </div>
-          </div>
         </header>
 
           <section class="container" id="bienvenida"> <!-- Bienvenida -->

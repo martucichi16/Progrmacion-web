@@ -123,7 +123,6 @@ header i {
     background-position: center;
     margin: 50px auto;
     padding: 70px;
-    position: relative;
 }
 
 #bienvenida h1{
@@ -167,21 +166,22 @@ header i {
 #principiantes h1{
     background-color: rgb(230, 248, 231);
     text-align: center;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 #principiantes h5{
-    height: 50px;
+    height: 35px;
+    color: rgb(38, 145, 65);
 }
 
 #principiantes p{
     width: auto;
-    height: 150px;
-    text-align: justify;
+    height: 130px;
+    text-align: center;
 }
 
 #principiantes img{
-    width: 90%;
+    width: 100%;
     height: 135px
 }
 
@@ -191,10 +191,21 @@ header i {
 }
 
 .card {
-    padding: 10px;
     background-color: rgb(249, 250, 217);
     display: flex;
     align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card-body {
+    text-align: center;
+}
+
+@media screen and (max-width:700px) {
+    #principiantes p{
+        height: 110px;
+    }
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -207,6 +218,12 @@ header i {
     justify-content: space-evenly;
 }
 
+.carousel-inner {
+    text-align: center;
+    width: 300px;
+    height: 200px;
+}
+
 .carousel-item {
     padding: 0 50px 0 50px
 }
@@ -214,7 +231,8 @@ header i {
 .carousel-control-prev, .carousel-control-next {
     height:20%;
     border-radius: 50%;
-    margin-top: 35%
+    margin-top: 25%;
+    z-index: 0;
 }
 
 .carousel-control-prev :hover, .carousel-control-next :hover {
@@ -232,6 +250,11 @@ header i {
         border-radius: 50%;
         margin-top: 60%
     }
+
+    .carousel-inner {
+        width: 150px;
+        height: 260px;
+    }
 }
 /* ---------------------------------------------------------------------------------- */
 #diets {
@@ -240,8 +263,8 @@ header i {
     padding:20px;
 }
 
-#diets form{
-    align-content: center;
+#diets .form-select {
+    z-index: 0;
 }
 
 /* ---------------------------------------------------------------------------------- */
